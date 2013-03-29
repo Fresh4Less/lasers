@@ -11,8 +11,8 @@ local game = {}
 function game:enter()
 	self.cam = Camera(0, 0)
 	
-	self.player = Player(vector(0, 0))
-	self.block = Block(vector(0, 0))
+	self.player = Player(vector(100, 100))
+	self.block = Block(vector(200, 200))
 end
 function game:update(dt)
 	self.player:update(dt)
