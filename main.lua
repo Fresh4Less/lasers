@@ -19,15 +19,3 @@ function love.load()
 	Gamestate.registerEvents()
 	Gamestate.switch(game)
 end
-
-Player = Class {
-	init = function(self, pos) 
-		self.pos = pos
-	end
-}
-function Player:update(dt)
-
-end
-function Player:draw()
-
-end
