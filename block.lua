@@ -1,5 +1,5 @@
 Class = require "hump.class"
-Vector = require "hump.vector"
+vector = require "hump.vector"
 
 Block = Class {
 	init = function(self, pos) 
@@ -10,7 +10,8 @@ function Block:update(dt)
 
 end
 function Block:draw()
-
+	love.graphics.setColor(0, 0, 255)
+	love.graphics.rectangle("fill", self.pos.x, self.pos.y, 32, 32)
 end
 
 return Block
