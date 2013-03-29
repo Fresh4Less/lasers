@@ -1,5 +1,7 @@
 Gamestate = require "hump.gamestate"
 Camera = require "hump.camera"
+Class = require "hump.class"
+Vector = require "hump.vector"
 
 local game = {}
 
@@ -19,13 +21,13 @@ function love.load()
 end
 
 Player = Class {
-	init = function(self, pos) {
+	init = function(self, pos) 
 		self.pos = pos
-	}
+	end
 }
-function Player:update(dt) {
+function Player:update(dt)
 
-}
-function Player:draw() {
+end
+function Player:draw()
 
-}
+end
