@@ -14,11 +14,13 @@ function game:enter()
 	self.player = Player(vector(0, 0))
 	self.block = Block(vector(0, 0))
 end
-function game:update()
-	
+function game:update(dt)
+	self.player:update(dt)
+	self.block:update(dt)
 end
 function game:draw()
-	
+	self.player:draw()
+	self.block:draw()
 end
 
 function love.load()
